@@ -13,7 +13,7 @@ const searchButton =document.getElementById("search-button");
       const searchInput =document.getElementById("search-input").value;
       console.log(searchInput);
         
-         const api ="http://api.openweathermap.org/data/2.5/weather?q="+searchInput+"&appid=54f9ffa09163872cb51316458c7c0e32"
+         const api ="https://api.openweathermap.org/data/2.5/weather?q="+searchInput+"&appid=54f9ffa09163872cb51316458c7c0e32"
 
      fetch(api).then((response) =>{
       console.log("sonali" +response.json()); 
@@ -39,7 +39,7 @@ const searchButton =document.getElementById("search-button");
     function getresult() {
       var city = document.getElementById("search-input").value;
       var url =
-        "http://api.weatherapi.com/v1/current.json?key=d404d3fe4605434c9dc181853220709&q=" +
+        "https://api.weatherapi.com/v1/current.json?key=d404d3fe4605434c9dc181853220709&q=" +
         city +
         "&aqi=no";
       var result = httpGet(url);
